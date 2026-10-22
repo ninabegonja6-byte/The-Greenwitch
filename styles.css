@@ -120,3 +120,371 @@ h1 { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.8rem, 5.3vw, 5.1rem)
   .site-footer { padding: 23px 18px; gap: 8px 16px; }
   .footer-small { width: 100%; margin-left: 0; }
 }
+
+/* THE GREENWITCH — editorial refinement */
+
+:root {
+  --ink: #191817;
+  --muted: #706963;
+  --paper: #ffffff;
+  --soft: #faf8f5;
+  --line: #e7e2dc;
+  --wine: #702331;
+  --wine-dark: #4e1721;
+}
+
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-header {
+  padding-top: 42px;
+  padding-bottom: 28px;
+}
+
+.main-nav {
+  letter-spacing: 0.04em;
+}
+
+.main-nav a {
+  transition: color 180ms ease;
+}
+
+.intro-line {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+}
+
+.hero-image {
+  margin-bottom: 76px;
+}
+
+.hero-image img {
+  filter: saturate(0.72) contrast(1.04);
+}
+
+.feature-grid {
+  margin-top: 0;
+  margin-bottom: 100px;
+  gap: clamp(40px, 7vw, 110px);
+}
+
+.eyebrow {
+  letter-spacing: 0.17em;
+  font-size: 0.65rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+.dek {
+  font-size: 1.2rem;
+  line-height: 1.75;
+}
+
+.section-block {
+  margin-bottom: 110px;
+}
+
+.section-heading {
+  padding-bottom: 25px;
+}
+
+.work-item {
+  padding: 26px 23px 22px;
+  transition:
+    border-color 200ms ease,
+    background-color 200ms ease,
+    transform 200ms ease;
+}
+
+.work-item:hover,
+.work-item:focus-visible {
+  background-color: #fcfaf8;
+}
+
+.archive-band {
+  background: #f8f5f1;
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+.closing-grid {
+  padding-top: 65px;
+}
+
+::selection {
+  background: #702331;
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    padding-top: 26px;
+  }
+
+  .hero-image {
+    margin-bottom: 48px;
+  }
+
+  .feature-grid {
+    margin-bottom: 70px;
+  }
+
+  .section-block {
+    margin-bottom: 75px;
+  }
+}
+
+/* THE GREENWITCH — bolder homepage design */
+
+.feature-grid {
+  background: #f8f5f1;
+  padding: 58px 6%;
+  margin-top: 0;
+  margin-bottom: 100px;
+  gap: 7%;
+}
+
+.feature-copy {
+  max-width: 620px;
+}
+
+.feature-copy h1 {
+  font-size: clamp(3.5rem, 6.5vw, 6.4rem);
+  line-height: 0.94;
+  letter-spacing: -0.065em;
+}
+
+.feature-copy .dek {
+  max-width: 430px;
+  font-size: 1.25rem;
+}
+
+.feature-art {
+  min-height: 440px;
+  background: #e8ded3;
+}
+
+.feature-art .paper {
+  width: 56%;
+  height: 74%;
+}
+
+.feature-art .paper-mark {
+  font-size: 9rem;
+}
+
+.hero-image {
+  height: clamp(360px, 55vw, 680px);
+  margin-bottom: 0;
+}
+
+.hero-image img {
+  transition: transform 700ms ease;
+}
+
+.hero-image:hover img {
+  transform: scale(1.025);
+}
+
+.section-heading h2 {
+  font-size: clamp(2.6rem, 4vw, 4rem);
+}
+
+.work-grid {
+  gap: 18px;
+  padding-top: 30px;
+}
+
+.work-item {
+  min-height: 250px;
+  padding: 30px 26px 24px;
+  border-color: #e5ded7;
+}
+
+.work-item h3 {
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+.work-essay {
+  background: #f8f5f1;
+  border-color: #f8f5f1;
+}
+
+.archive-band {
+  background: #702331;
+  color: #fffaf5;
+  border-color: #702331;
+  padding: 62px clamp(24px, 6vw, 80px);
+}
+
+.archive-band .eyebrow {
+  color: #e8c7c9;
+}
+
+.archive-band p:not(.eyebrow) {
+  color: #f0e2df;
+}
+
+.archive-link {
+  color: #fffaf5;
+  border-color: #fffaf5;
+}
+
+@media (max-width: 760px) {
+  .feature-grid {
+    padding: 36px 24px;
+    gap: 28px;
+  }
+
+  .feature-art {
+    min-height: 330px;
+  }
+
+  .feature-copy h1 {
+    font-size: clamp(3.3rem, 14vw, 5rem);
+  }
+
+  .work-item {
+    min-height: 210px;
+  }
+
+  .archive-band {
+    padding: 36px 22px;
+  }
+}
+
+/* GREENWITCH — CLEAR SECTION LAYOUT */
+
+/* Give the page consistent editorial margins */
+.site-header,
+.intro-line,
+.feature-grid,
+.section-block,
+.archive-details,
+.closing-grid {
+  width: min(1180px, calc(100% - 64px));
+}
+
+/* Make the masthead feel like its own section */
+.site-header {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 28px;
+}
+
+/* Separate the introductory line from the feature */
+.intro-line {
+  border-bottom: 1px solid var(--line);
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+/* Feature area */
+.feature-grid {
+  margin-top: 44px;
+  margin-bottom: 90px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--ink);
+}
+
+/* Give the journal a clear heading and boundary */
+.section-block {
+  padding-top: 20px;
+  margin-bottom: 100px;
+}
+
+.section-heading {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 24px;
+}
+
+/* Turn each work into a distinct editorial card */
+.work-grid {
+  gap: 20px;
+  padding-top: 28px;
+}
+
+.work-item {
+  background: #fff;
+  border: 1px solid #ded7d0;
+  padding: 26px;
+}
+
+.work-essay {
+  background: #f8f5f1;
+  border-color: #f8f5f1;
+}
+
+/* Separate the archive as its own full-width band */
+.archive-band {
+  width: 100%;
+  margin: 0;
+  padding: 70px max(32px, calc((100% - 1116px) / 2));
+  border-top: 1px solid var(--wine);
+  border-bottom: 1px solid var(--wine);
+}
+
+/* Keep the archive details visually distinct */
+.archive-details {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Separate About and Submit */
+.closing-grid {
+  padding-top: 65px;
+  padding-bottom: 75px;
+  gap: 50px;
+}
+
+.closing-grid > div {
+  padding: 28px;
+  background: #f8f5f1;
+}
+
+.closing-grid > div + div {
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.site-footer {
+  border-top: 2px solid var(--ink);
+}
+
+@media (max-width: 760px) {
+  .site-header,
+  .intro-line,
+  .feature-grid,
+  .section-block,
+  .archive-details,
+  .closing-grid {
+    width: calc(100% - 36px);
+  }
+
+  .feature-grid {
+    margin-top: 28px;
+    padding-bottom: 45px;
+    margin-bottom: 60px;
+  }
+
+  .archive-band {
+    padding: 42px 22px;
+  }
+
+  .closing-grid {
+    gap: 18px;
+  }
+
+  .closing-grid > div {
+    padding: 22px;
+  }
+}
