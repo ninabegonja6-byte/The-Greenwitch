@@ -2,7 +2,7 @@
   --ink: #171615;
   --muted: #6c6762;
   --paper: #ffffff;
-  --soft: #f7f5f2;
+  --soft: #F7F2E8;
   --line: #e5e1dc;
   --wine: #702331;
   --wine-dark: #4e1721;
@@ -127,7 +127,7 @@ h1 { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.8rem, 5.3vw, 5.1rem)
   --ink: #191817;
   --muted: #706963;
   --paper: #ffffff;
-  --soft: #faf8f5;
+  --soft: #fF7F2E8;
   --line: #e7e2dc;
   --wine: #702331;
   --wine-dark: #4e1721;
@@ -206,7 +206,7 @@ h3 {
 
 .work-item:hover,
 .work-item:focus-visible {
-  background-color: #fcfaf8;
+  background-color: #F7F2E8;
 }
 
 .archive-band {
@@ -245,7 +245,7 @@ h3 {
 /* THE GREENWITCH — bolder homepage design */
 
 .feature-grid {
-  background: #f8f5f1;
+  background: #F7F2E8;
   padding: 58px 6%;
   margin-top: 0;
   margin-bottom: 100px;
@@ -315,8 +315,8 @@ h3 {
 }
 
 .work-essay {
-  background: #f8f5f1;
-  border-color: #f8f5f1;
+  background: #F7F2E8;
+  border-color: #F7F2E8;
 }
 
 .archive-band {
