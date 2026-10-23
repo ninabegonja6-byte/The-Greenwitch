@@ -2,7 +2,7 @@
   --ink: #171615;
   --muted: #6c6762;
   --paper: #ffffff;
-  --soft: #F7F2E8;
+  --soft: #F0F4F0;
   --line: #e5e1dc;
   --wine: #702331;
   --wine-dark: #4e1721;
@@ -37,7 +37,7 @@ h1 { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.8rem, 5.3vw, 5.1rem)
 .dot { padding: 0 7px; color: var(--wine); }
 .text-link { display: inline-flex; align-items: center; gap: 12px; padding-bottom: 5px; border-bottom: 1px solid var(--wine); color: var(--wine); font-size: .78rem; }
 .text-link span { font-size: 1rem; transition: transform .2s ease; }
-.text-link:hover span { transform: translate(3px, -2px); }
+.text-link: span { transform: translate(3px, -2px); }
 .hero-image { width: 100%; height: clamp(300px, 47vw, 610px); margin: 0 auto 58px; position: relative; overflow: hidden; background: #e5ded4; }
 .hero-image img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 55%; filter: saturate(.7); transition: opacity .25s ease; }
 .hero-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(22,19,18,.43), transparent 72%); }
@@ -61,7 +61,7 @@ h1 { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.8rem, 5.3vw, 5.1rem)
 .section-heading .eyebrow { margin-bottom: 9px; }
 .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; padding-top: 25px; }
 .work-item { cursor: pointer; min-height: 210px; padding: 22px 20px 18px; border: 1px solid var(--line); display: flex; flex-direction: column; align-items: start; transition: border-color .2s ease, transform .2s ease; }
-.work-item:hover, .work-item:focus-visible { border-color: var(--wine); transform: translateY(-2px); outline: none; }
+.work-item:, .work-item:focus-visible { border-color: var(--wine); transform: translateY(-2px); outline: none; }
 .work-item[aria-pressed="true"] { border-color: var(--wine); box-shadow: inset 0 0 0 1px var(--wine); }
 .work-item .eyebrow { margin-bottom: 13px; }
 .work-item h3 { margin: 0 0 9px; font-size: 1.7rem; line-height: 1.05; }
@@ -127,7 +127,7 @@ h1 { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.8rem, 5.3vw, 5.1rem)
   --ink: #191817;
   --muted: #706963;
   --paper: #ffffff;
-  --soft: #fF7F2E8;
+  --soft: #F0F4F0;
   --line: #e7e2dc;
   --wine: #702331;
   --wine-dark: #4e1721;
@@ -206,7 +206,7 @@ h3 {
 
 .work-item:hover,
 .work-item:focus-visible {
-  background-color: #F7F2E8;
+  background-color: #F0F4F0;
 }
 
 .archive-band {
@@ -245,7 +245,7 @@ h3 {
 /* THE GREENWITCH — bolder homepage design */
 
 .feature-grid {
-  background: #F7F2E8;
+  background: #F0F4F0;
   padding: 58px 6%;
   margin-top: 0;
   margin-bottom: 100px;
@@ -315,8 +315,8 @@ h3 {
 }
 
 .work-essay {
-  background: #F7F2E8;
-  border-color: #F7F2E8;
+  background: #F0F4F0;
+  border-color: #F0F4F0;
 }
 
 .archive-band {
