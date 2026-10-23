@@ -45,7 +45,15 @@ h1 { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.8rem, 5.3vw, 5.1rem)
 .hero-image-caption .eyebrow { color: #f2dadd; }
 .hero-image-caption p:last-child { margin: 0; font: clamp(1.5rem, 3.3vw, 3rem)/1.08 var(--serif); letter-spacing: -.03em; }
 .hero-image-credit { position: absolute; z-index: 1; right: 22px; bottom: 18px; color: rgba(255,255,255,.85); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
-.-art { min-height: 340px; position: relative; display: grid; place-items: center; background: #e8e0d6; overflow: hidden; }
+.feature-art {
+  min-height: 340px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: #e8e0d6;
+  overflow: hidden;
+}
+
 .feature-art::before,
 .feature-art::after {
   content: none;
