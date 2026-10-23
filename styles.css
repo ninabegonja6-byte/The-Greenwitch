@@ -509,3 +509,46 @@ h3 {
   max-width: 100%;
   height: auto;
 }
+
+/* Homepage contact section */
+.contact-section {
+  background: #F7F2E8;
+  padding: 56px 24px;
+  margin-top: 48px;
+}
+
+.contact-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.contact-section .section-label {
+  color: #702331;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 16px;
+}
+
+.contact-section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.contact-section p:not(.section-label) {
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #702331;
+  text-decoration: none;
+  border-bottom: 1px solid #702331;
+  padding-bottom: 4px;
+}
+
+.contact-link:hover {
+  opacity: 0.7;
+}
