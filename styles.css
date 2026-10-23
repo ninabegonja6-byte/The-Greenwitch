@@ -46,8 +46,10 @@ h1 { max-width: 620px; margin: 0 0 20px; font-size: clamp(2.8rem, 5.3vw, 5.1rem)
 .hero-image-caption p:last-child { margin: 0; font: clamp(1.5rem, 3.3vw, 3rem)/1.08 var(--serif); letter-spacing: -.03em; }
 .hero-image-credit { position: absolute; z-index: 1; right: 22px; bottom: 18px; color: rgba(255,255,255,.85); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
 .-art { min-height: 340px; position: relative; display: grid; place-items: center; background: #e8e0d6; overflow: hidden; }
-.feature-art::before { content: ""; position: absolute; width: 290px; height: 290px; border: 1px solid rgba(118,46,61,.27); border-radius: 50%; right: -55px; top: -55px; }
-.feature-art::after { content: ""; position: absolute; width: 180px; height: 180px; border: 1px solid rgba(118,46,61,.22); border-radius: 50%; left: -55px; bottom: 12px; }
+.feature-art::before,
+.feature-art::after {
+  content: none;
+}
 .paper { position: absolute; width: 48%; height: 68%; box-shadow: 0 14px 35px rgba(39,29,24,.12); }
 .paper-back { background: #c7a8a0; transform: translate(28px, -9px) rotate(6deg); }
 .paper-front { background: #fbf6ec; transform: translate(-7px, 4px) rotate(-3deg); padding: 23px; display: flex; flex-direction: column; }
