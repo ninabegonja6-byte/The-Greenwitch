@@ -503,3 +503,9 @@ h3 {
     padding: 22px;
   }
 }
+.masthead-logo {
+  display: block;
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+}
